@@ -1,0 +1,9 @@
+@import './base/settings';
+@import './components/button';
+@import './components/add-option';
+@import './components/modal';
+@import './components/container';
+@import './components/widget';
+@import './components/option';
+@import './base/base'; //remove file extension when importing css
+@import './components/header';

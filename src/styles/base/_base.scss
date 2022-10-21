@@ -1,0 +1,18 @@
+//?this scss is for global files (big picture)
+
+html {
+   font-size: 62.5%; //this sets 1 rem -> 10px
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: $m-size; //16px
+   background-color: $dark-blue;
+}
+
+button {
+   cursor: pointer; //cursor changes when goes into button
+}
+button:disabled {
+   cursor: default;
+}

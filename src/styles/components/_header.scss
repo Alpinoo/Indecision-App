@@ -1,0 +1,26 @@
+.header {
+   background: $off-black;
+   margin-bottom: $m-size;
+   padding: $m-size 0; //1.6 to up&bottom 0 to left&right
+   color: white;
+}
+
+//?we could also create h1 object in .header but it would be like callback hell due to complexity.
+//?Instead, we create object outside and give name title to use it in our components separately.
+.header__title {
+   font-size: $l-size;
+   margin: 0;
+}
+
+.header__subtitle {
+   color: $off-white;
+   font-size: $m-size;
+   font-weight: 500;
+   margin: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+   .header {
+      margin-bottom: $xl-size;
+   }
+}

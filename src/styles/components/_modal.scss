@@ -1,0 +1,45 @@
+//?When using 3rd party components, we have to target each class seperately.
+
+.ReactModalPortal > div {
+   //just focus on div, not rest
+   opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+   //wait 200 ms
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: opacity 200ms ease-in-out;
+}
+
+.ReactModalPortal
+   .ReactModal__Overlay--after-open {
+   //fade in effect
+   opacity: 1;
+}
+.ReactModalPortal
+   .ReactModal__Overlay--before-close {
+   //fade out effect
+   opacity: 0;
+}
+
+.modal {
+   background: $light-blue;
+   color: white;
+   max-width: 30rem;
+   outline: none;
+   padding: $l-size;
+   text-align: center;
+}
+
+.modal__title {
+   margin: 0 0 $m-size 0;
+}
+
+.modal__body {
+   margin: 0 0 $l-size;
+   font-size: 2rem;
+   font-weight: 300;
+   word-break: break-all; //when long text entered, it'll divide words
+}
